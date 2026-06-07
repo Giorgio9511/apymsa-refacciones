@@ -1,0 +1,6 @@
+@Refacciones.API_HostAddress = http://localhost:5012
+
+GET {{Refacciones.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
