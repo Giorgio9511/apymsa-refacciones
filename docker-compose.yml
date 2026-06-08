@@ -10,6 +10,8 @@ services:
       - MSSQL_PID=Express
     ports:
       - "1433:1433"
+    volumes:
+      - "sqlserver_data:/var/opt/mssql"
 
   api:
     build:
@@ -31,3 +33,6 @@ services:
       - "5173:80"
     depends_on:
       - api
+  
+volumes:
+ sqlserver_data:  
